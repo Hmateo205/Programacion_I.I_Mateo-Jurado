@@ -12,6 +12,9 @@ int main (int argc, char *argv[]) {
     float subtotal1=0, subtotal2=0, subtotal3=0, subtotal4=0, subtotal5=0; /*subtotales*/
     float subs=0, total=0; /*subtotales*/
 
+    
+    
+    
     printf("*/*/*/*/*/*/*/*/*/*ELEGIR UN PROUCTO*/*/*/*/*/*/*/*/*/*/*/*\n");
     printf("a)Llantas (Precio: $150)\n");
     printf("b)Kit pastillas de freno (Precio: $55)\n");
