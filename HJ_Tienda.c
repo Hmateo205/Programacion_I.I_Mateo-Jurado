@@ -110,6 +110,9 @@ int main (int argc, char *argv[]) {
     printf("El valor ahorrado es: %0.2f\n",ahorro);
     printf("El subtotal es: %0.2f\n",total);
 
+
+    printf("Hola");
+
     return 0;
 
 }
