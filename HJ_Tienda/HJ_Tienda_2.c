@@ -11,7 +11,7 @@ int main() {
     float precio1 = 150, precio2 = 55, precio3 = 180, precio4 = 70, precio5 = 120;
     float subtotal1 = 0, subtotal2 = 0, subtotal3 = 0, subtotal4 = 0, subtotal5 = 0;
     float subtotal = 0, total = 0;
-    float ahorro=0;
+    float ahorro = 0;
     int seguir = 1;
     
     while (1) {
@@ -51,7 +51,7 @@ int main() {
                     case 4:
                            printf("Ingrese la cantidad de unidades: ");
                 scanf("%f", &unidades4);
-                        subtota4 = precio4 * unidades4;
+                        subtotal4 = precio4 * unidades4;
                         break;
                     case 5:
                              printf("Ingrese la cantidad de unidades: ");
@@ -80,13 +80,13 @@ int main() {
     else if (subtotal > 5000)
     {
         total = subtotal * 0.91;
-         ahorro=subtotal-total;
+        ahorro=subtotal-total;
         
     }
     else
     {
         total = subtotal;
-         ahorro=subtotal-total;
+        ahorro=subtotal-total;
         
     }
                 
@@ -113,14 +113,36 @@ int main() {
     printf("***************** FACTURA IMPRESA **************\n");
     printf("PRODUCTO        VALOR UNITARIO      SUBTOTAL\n");
                     
-    printf("Llantas          %.2f        %.2f\n", precio1, subtotal1);
-    printf("Kit Frenos       %.2f        %.2f\n",  precio2, subtotal2);
-    printf("Kit Embrague     %.2f        %.2f\n", precio3, subtotal3);
-    printf("Faros            %.2f        %.2f\n",  precio4, subtotal4);
-    printf("Radiadores       %.2f        %.2f\n", precio5, subtotal5);
+    if (unidades1 != 0)
+    {
+        printf("Llantas          %.2f        %.2f\n", precio1, subtotal1);
+    }
+
+    if (unidades2 != 0)
+    {
+        printf("Kit Frenos       %.2f        %.2f\n",  precio2, subtotal2);
+    }
+
+    if (unidades3 != 0)
+    {
+        printf("Kit Embrague     %.2f        %.2f\n", precio3, subtotal3);
+    }
+
+    if (unidades4 != 0)
+    {
+        printf("Faros            %.2f        %.2f\n", precio4, subtotal4);
+    }
+
+    if (unidades5 != 0)
+    {
+        printf("Radiadores       %.2f        %.2f\n", precio5, subtotal5);
+    }
+    
+    
     
 
     printf("El subtotal es: %.2f\n", subtotal);
+    printf("El total ahorrado es: %.2f\n", ahorro);
     printf("El total es: %.2f\n", total);
     exit(0);
 
