@@ -123,5 +123,6 @@ int main(int argc, char *argv[])
     printf("El subtotal es: %.2f\n", subtotal);
     printf("El total es: %.2f\n", total);
 
+
     return 0;
 }
