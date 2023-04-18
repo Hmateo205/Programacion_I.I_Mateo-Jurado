@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
         case 2:
             printf("Ingrese su nombre: ");
             scanf("%s", &nombre);
-            printf("Ingrese su número de cédula: ");
+            printf("Ingrese su numero de cedula: ");
             scanf("%s", &cedula);
             tota = numa * prca;
             totb = numb * prcb;
@@ -84,8 +84,8 @@ int main(int argc, char *argv[])
 
             printf("*********   FACTURA ************\n");
             printf("Nombre: %s\n", nombre);
-            printf("Nro. cédula: %s\n", cedula);
-            printf("Producto                Número              valor           total\n");
+            printf("Nro. cedula: %s\n", cedula);
+            printf("Producto                Numero              valor           total\n");
             if (numa != 0)
             {
                 printf("Llantas                 %.2f                %.2f             %.2f\n", numa, prca, tota);
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                printf("No se aplica descuento dado que el mónto no alcanzo el mínimo necesario\n");
+                printf("No se aplica descuento dado que el monto no alcanzo el minimo necesario\n");
             }
 
             total = subtotal * 1.12;
@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
             break;
 
         default:
-            printf("Elija una opción correcta");
+            printf("Elija una opcion correcta");
             break;
         }
     } while (opcion1!=3);
