@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
     printf("Ingrese su nombre: ");
     scanf("%s", &nombre);
-    printf("Ingrese su número de cédula: ");
+    printf("Ingrese su numero de cedula: ");
     scanf("%s", &cedula);
     printf("Escoja los productos que desea facturar:\n");
     printf("a) Llantas (Precio: $150)\n");
@@ -61,8 +61,8 @@ int main(int argc, char *argv[])
    
     printf("*********   FACTURA ************\n");
     printf("Nombre: %s\n", nombre);
-    printf("Nro. cédula: %s\n", cedula);
-        printf("Producto                Número              valor           total\n");
+    printf("Nro. cedula: %s\n", cedula);
+        printf("Producto                Numero              valor           total\n");
     if (numa != 0){
         printf("Llantas                 %.2f                %.2f             %.2f\n",numa,prca,tota);
     }
