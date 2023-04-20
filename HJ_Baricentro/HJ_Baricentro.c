@@ -37,7 +37,8 @@ int main() {
     
     // Cálculo del baricentro
     denominador = (A.x * (B.y - C.y) + B.x * (C.y - A.y) + C.x * (A.y - B.y));
-    if (denominador == 0) {
+    if (denominador == 0) 
+    {
         printf("Los puntos ingresados no forman un triangulo.\n");
         return 0;
     }
@@ -51,14 +52,17 @@ int main() {
     areaACP = fabs((A.x*(baricentro.y-C.y)+baricentro.x*(C.y-A.y)+C.x*(A.y-baricentro.y))/2.0);
     areaBCP = fabs((B.x*(C.y-baricentro.y)+baricentro.x*(B.y-C.y)+C.x*(baricentro.y-B.y))/2.0);
     
-    if (areaABC == (areaABP + areaACP + areaBCP)) {
+    if (areaABC == (areaABP + areaACP + areaBCP)) 
+    {
         printf("El baricentro se encuentra dentro del triangulo.\n");
-        printf("Coordenadas del baricentro: (%.2f, %.2f)\n", baricentro.x, baricentro.y);
-    } else {
-        printf("El baricentro se encuentra fuera del triangulo.\n");
+    } 
+    else 
+    {
         printf("Coordenadas del baricentro: (%.2f, %.2f)\n", baricentro.x, baricentro.y);
     }
-    
+
+    printf("Coordenadas del baricentro: (%.2f, %.2f)\n", baricentro.x, baricentro.y);
+
     
     
     return 0;
