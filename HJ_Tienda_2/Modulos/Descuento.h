@@ -1,1 +1,0 @@
-float aplicarDescuento(float subtotal);
